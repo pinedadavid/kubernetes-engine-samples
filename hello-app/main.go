@@ -44,7 +44,13 @@ func main() {
 func hello(w http.ResponseWriter, r *http.Request) {
 	log.Printf("Serving request: %s", r.URL.Path)
 	host, _ := os.Hostname()
-	fmt.Fprintf(w, "Hello, world!\n")
+	fmt.Fprintf(w, "Universidad de San Carlos de Guatemala\n")
+	fmt.Fprintf(w, "Introducción a la ingeniería de software\n")
+	fmt.Fprintf(w, "Ferri Omar Vasquez \n")
+	fmt.Fprintf(w, "Hector Lopez\n")
+	fmt.Fprintf(w, "David Pineda\n")
+	fmt.Fprintf(w, "Americo Pineda\n")
+	fmt.Fprintf(w, "Nery Galvez\n")
 	fmt.Fprintf(w, "Version: 1.0.0\n")
 	fmt.Fprintf(w, "Hostname: %s\n", host)
 }
